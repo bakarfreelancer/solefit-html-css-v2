@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" type="image/png" href="assets/media/favicon.png" />
+    <title>SoleFit | Cart</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="container">
+        <div class="header-content d-flex">
+          <div class="header-logo col">
+            <a href="index.html">
+              <img src="assets/media/logo.png" class="logo" alt="logo" />
+            </a>
+          </div>
+          <!--header-logo-->
+          <nav class="header-menu col-8 header-menu--closed">
+            <ul class="d-flex">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="store.html">Store</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="cart.html" class="active">Cart</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Mobile Menu Icon -->
+          <div class="header-menu-icon">
+            <img src="assets/icons/menu.svg" alt="Icon" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <main>
+      <section class="banner cart">
+        <div class="container">
+          <div class="banner-content">
+            <h1>Cart</h1>
+            <p>Collect your products</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products list start -->
+      <section class="products-list">
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex">
+                    <div class="remove col-1">
+                      <img src="assets/icons/x.svg" alt="remove" />
+                    </div>
+                    <div class="image col-3">
+                      <img src="assets/media/shoe1.jpg" alt="Product" />
+                    </div>
+                    <div class="product-name col-8">
+                      <p>Brown Sandals</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>$ 25.00</p>
+                </td>
+                <td>
+                  <div class="quantity">
+                    <form action="#">
+                      <input
+                        placeholder="1"
+                        value="1"
+                        type="number"
+                        id="quanti
+                      "
+                        name="quantity"
+                      />
+                    </form>
+                  </div>
+                </td>
+                <td>
+                  <p>$ 25.00</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4" align="right">
+                  <button type="submit" class="btn">UPDATE CART</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Products list end -->
+
+      <!-- Cart totals start -->
+      <section class="cart-totals">
+        <div class="container">
+          <div class="totals">
+            <h3>Cart Totals</h3>
+            <div class="d-flex">
+              <div class="col-6">Subtotal</div>
+              <div class="col-6">$25.00</div>
+            </div>
+            <div class="d-flex">
+              <div class="col-6">Shipping</div>
+              <div class="col-6">$0.00</div>
+            </div>
+            <div class="d-flex">
+              <div class="col-6">Total</div>
+              <div class="col-6">$25.00</div>
+            </div>
+            <a class="btn" href="checkout.html">CHECKOUT</a>
+          </div>
+        </div>
+      </section>
+      <!-- Cart totals end -->
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="footer-content d-flex">
+          <div class="footer-logo col-3 col-md-6 col-sm-12">
+            <a href="index.html">
+              <img src="assets/media/logo.png" class="logo" alt="logo" />
+            </a>
+            <p class="footer-intro">
+              Discover the perfect pair of shoes that not only fits your style
+              but also brings comfort to your every step. Our extensive
+              collection features the latest trends in footwear, crafted with
+              premium materials to ensure durability and support.
+            </p>
+          </div>
+          <!-- footer-logo end -->
+
+          <!-- Quick links start -->
+          <div class="col-4 col-md-6 col-sm-12 footer-menu">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="store.html">Store</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="cart.html">Cart</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Quick links End -->
+
+          <!-- Join Newsletter end -->
+          <div class="col-4 col-md-12 col-sm-12 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>
+              Subscribe to our newsletter to get the latest updates and offers.
+            </p>
+            <form action="#">
+              <div class="d-flex gap-10">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  title="Please enter your email."
+                  required
+                />
+                <button type="submit" class="btn">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <!-- Join Newsletter start -->
+        </div>
+        <!--footer-content -->
+      </div>
+      <!-- Container -->
+      <!-- Copy Right start -->
+      <div class="copy-right">
+        <p>Copyright &copy; <span id="current-year"></span> Sole Fit</p>
+      </div>
+      <!-- Copy Right end -->
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Load Javascript -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
